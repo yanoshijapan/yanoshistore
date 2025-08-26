@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - Yanoshi Store</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="page-keranjang">
+    
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="https://yanoshijapan.github.io/asetonline/logohitam.png" alt="Logo Yanoshi">
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="keranjang.html" class="cart-icon">
+          🛒
+          <span id="cart-count">0</span>
+        </a>
+        <div class="hamburger-menu">
+          ☰
+        </div>
+      </div>
+    </header>
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="close-btn">&times;</a>
+      <a href="index.html">Kembali ke Beranda</a>
+      <button class="dropdown-btn">Katalog ▾</button>
+      <div class="dropdown-content">
+        <a href="streetwear.html">Streetwear</a>
+        <a href="tshirt.html">T-Shirt</a>
+        <a href="hoodie.html">Hoodie</a>
+        <a href="kdeluxe.html">Kakejiku Deluxe</a>
+        <a href="kpremium.html">Kakejiku Premium</a>
+        <a href="keychain.html">Keychain</a>
+        <a href="sake.html">Sake Set</a>
+        <a href="katana.html">Katana</a>
+        <a href="snack.html">Snack Jepang</a>
+      </div>
+      <a href="keranjang.html">Lihat Keranjang</a>
+      <a href="https://wa.me/6281290156936?text=Halo%20Admin%20Yanoshi" target="_blank">Kontak</a>   
+    </nav>
+    <div id="imageModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    <main class="container">
+        <h1>Keranjang Belanjamu</h1>
+        <div class="cart-container">
+            <div id="cart-items-container">
+                <p>Memuat keranjang...</p>
+            </div>
+
+            <div id="cart-summary-container" class="cart-summary" style="display:none;">
+                <div class="voucher-container">
+                    <input type="text" id="voucher-input" placeholder="Masukkan Kode Voucher">
+                    <button id="apply-voucher-btn" class="btn">Gunakan</button>
+                </div>
+                <div class="summary-row" id="discount-row" style="display: none;">
+                    <span>Diskon Voucher</span>
+                    <span id="discount-amount">- Rp 0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="total-price">Rp 0</span>
+                </div>
+            </div>
+
+            <div class="checkout-form">
+                <div class="form-group">
+                    <label for="customer-name">Nama Lengkap</label>
+                    <input type="text" id="customer-name" placeholder="Masukkan namamu">
+                </div>
+                <div class="form-group">
+                    <label for="customer-whatsapp">Nomor WhatsApp (Contoh: 081234567890)</label>
+                    <input type="tel" id="customer-whatsapp" placeholder="Masukkan nomor WhatsApp aktif">
+                </div>
+            </div>
+
+            <fieldset class="info-pengiriman-card">
+                <h2 class="fieldset-title">Info Pengiriman</h2>
+                <div class="form-group">
+                    <label for="recipient-name">Nama Penerima</label>
+                    <input type="text" id="recipient-name" placeholder="Nama penerima paket">
+                </div>
+                <div class="form-group">
+                    <label for="recipient-phone">Nomor Penerima (Contoh: 081234567890)</label>
+                    <input type="tel" id="recipient-phone" placeholder="Nomor telepon penerima yang bisa dihubungi">
+                </div>
+                <div class="form-group">
+                    <label for="shipping-address">Alamat Pengiriman</label>
+                    <input type="text" id="shipping-address" rows="3" placeholder="Alamat lengkap, termasuk kecamatan, kota, dan kode pos">
+                </div>
+                <div class="form-group">
+                    <label for="shipping-date">Request Tanggal Kirim (Opsional)</label>
+                    <input type="date" id="shipping-date" placeholder="opsional">
+                </div>
+            </fieldset>
+
+            <div class="cart-actions">
+                <a href="index.html" class="btn">Kembali ke Beranda</a>
+                <button id="checkout-btn" class="btn btn-primary">CHECKOUT</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="checkout-popup" class="modal">
+      <div class="popup-content">
+        <h2>Terima Kasih!</h2>
+        <p>Orderanmu akan kami proses 1x24 jam dan akan kami konfirmasi melalui WhatsApp. Silakan klik tombol konfirmasi order dibawah ini.</p>
+        <br>
+        <a href="#" id="konfirmasi-wa-btn" class="btn btn-secondary" target="_blank" style="margin-bottom: 10px; background-color: #25D366;">Konfirmasi Order</a>
+        <br>
+        <br>
+        <a href="index.html" class="btn btn-primary">Kembali ke Beranda</a>
+      </div>
+    </div>
+    
+    <div id="notification-popup" class="modal">
+      <div class="popup-content">
+        <p id="notification-message" style="margin-bottom: 20px;"></p>
+        <button id="close-notification-btn" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

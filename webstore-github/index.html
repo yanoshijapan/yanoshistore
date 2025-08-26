@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanoshi Store - Beranda</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="page-utama">
+    
+    <header class="main-header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="https://yanoshijapan.github.io/asetonline/logohitam.png" alt="Logo Yanoshi">
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="keranjang.html" class="cart-icon">
+          🛒
+          <span id="cart-count">0</span>
+        </a>
+        <div class="hamburger-menu">
+          ☰
+        </div>
+      </div>
+    </header>
+    <nav id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="close-btn">&times;</a>
+      <a href="index.html">Kembali ke Beranda</a>
+      <button class="dropdown-btn">Katalog ▾</button>
+      <div class="dropdown-content">
+        <a href="streetwear.html">Streetwear</a>
+        <a href="tshirt.html">T-Shirt</a>
+        <a href="hoodie.html">Hoodie</a>
+        <a href="kdeluxe.html">Kakejiku Deluxe</a>
+        <a href="kpremium.html">Kakejiku Premium</a>
+        <a href="keychain.html">Keychain</a>
+        <a href="sake.html">Sake Set</a>
+        <a href="katana.html">Katana</a>
+        <a href="snack.html">Snack Jepang</a>
+      </div>
+      <a href="keranjang.html">Lihat Keranjang</a>
+      <a href="https://wa.me/6281290156936?text=Halo%20Admin%20Yanoshi" target="_blank">Kontak</a>   
+    </nav>
+    <div id="imageModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    <main class="container">
+      <section class="slider-container">
+        <div class="slider">
+          <div class="slide"><img src="https://yanoshijapan.github.io/asetonline/1.jpg" alt="Promo 1"></div>
+          <div class="slide"><img src="https://yanoshijapan.github.io/asetonline/2.jpg" alt="Promo 2"></div>
+          <div class="slide"><img src="https://yanoshijapan.github.io/asetonline/3.jpg" alt="Promo 3"></div>
+        </div>
+      </section>
+
+       <section class="product-grid">
+        <a href="streetwear.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/streetwear.jpg" alt="Streetwear"><p>Streetwear</p></div>
+        </a>
+        <a href="tshirt.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/tshirt.jpg" alt="T-Shirt"><p>T-Shirt</p></div>
+        </a>
+        <a href="hoodie.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/hoodie.jpg" alt="Hoodie"><p>Hoodie</p></div>
+        </a>
+        <a href="kdeluxe.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/deluxe.jpg" alt="Kakejiku Deluxe"><p>Kakejiku Deluxe</p></div>
+        </a>
+        <a href="kpremium.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/premium.jpg" alt="Kakejiku Premium"><p>Kakejiku Premium</p></div>
+        </a>
+        <a href="keychain.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/keychain.jpg" alt="Keychain"><p>Keychain</p></div>
+        </a>
+        <a href="sake.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/sake.jpg" alt="Sake Set"><p>Sake Set</p></div>
+        </a>
+        <a href="katana.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/katana.jpg" alt="Katana"><p>Katana</p></div>
+        </a>
+        <a href="snack.html" style="text-decoration:none;">
+          <div class="product-card"><img src="https://yanoshijapan.github.io/asetonline/snack.jpg" alt="Snack Jepang"><p>Snack Jepang</p></div>
+        </a>
+      </section>
+
+      <section class="promo-section">
+        <img src="https://yanoshijapan.github.io/asetonline/banner%201.jpg" alt="Promo Spesial">
+      </section>
+
+      <section class="action-buttons">
+        <a href="keranjang.html" class="btn btn-primary">Lihat Keranjang</a>
+        <a href="https://wa.me/6281290156936?text=Halo%20Admin%20Yanoshi" target="_blank" class="btn btn-primary">Kontak Admin</a>
+      </section>
+      
+      <section class="social-section">
+        <h3>Follow Sosmed Yanoshi</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/YANOSHI_OMIYAGE" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@yanoshiomiyage" target="_blank">TikTok</a>
+        </div>
+      </section>
+    </main>
+    
+    <div id="promo-popup" class="modal">
+      <div class="popup-content promo-popup-content">
+        <a href="#" id="promo-popup-link">
+          <img src="https://yanoshijapan.github.io/asetonline/voucer10k.jpg" id="promo-popup-image" alt="Promo Spesial">
+        </a>
+        <button id="close-promo-popup" class="promo-close-button">Tutup</button>
+      </div>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
